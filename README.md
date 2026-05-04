@@ -1,14 +1,14 @@
 # Blog Deadline Generator
-This script assigns two deadlines per student per term (4 total), subject to:
+This script assigns two deadlines per term (4 total) to each student, subject to:
 
-- A minimum gap between deadlines
-- A maximum number of students per date
+- A minimum gap between a student's deadlines in a single term
+- A maximum number of students with a given deadline
 - Exclusion of reading week and/or midterm week dates
 
-It outputs a CSV file with assigned dates for each student.
+It outputs a CSV file with the four assigned dates for each student.
 
 ## Files
-- deadline_scheduler.py — main script
+- deadlines.py — main script
 - names.csv — input file (one name per row, no header - must be uploaded)
 - assigned_dates.csv — output file (generated after running)
 
@@ -30,18 +30,18 @@ pip install pandas
 ## Input Format
 names.csv should look like:
 
-| MacID     |          |
+|  |          |
 | ----------- | ----------- |
 | halla45      |         |
 | oreilly  |      |
 | rachmanr  |      |
 
-(No header, one name per line)
+(No header, one MacID per line)
 
 ## Configuration
 
 You can edit these parameters in the script:
-- Term date ranges
+- Term start/end dates
 - Reading week/midterm periods
 - min_gap → minimum days between a student’s two deadlines
 - max_per_date → maximum number of students per date
@@ -62,5 +62,5 @@ The algorithm:
 - Ensures all constraints are satisfied
 
 ## Notes
-- Output is sorted alphabetically by name
-- Input names are shuffled internally to ensure fair distribution
+- Output is sorted alphabetically by MacID
+- Input MacIDs are shuffled internally to ensure fair distribution
