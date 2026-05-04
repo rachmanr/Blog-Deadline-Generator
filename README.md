@@ -22,10 +22,8 @@ pip install pandas
 ## How to Run
 1. Clone or download this repository
 2. Open a terminal (Command Prompt) in the project folder
-3. Run:
-   python deadlines.py
-4. The output will be saved as:
-   assigned_dates.csv
+3. Run python deadlines.py
+4. The output will be saved as assigned_dates.csv
 
 ## Input Format
 names.csv should look like:
