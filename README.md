@@ -28,11 +28,11 @@ pip install pandas
 ## Input Format
 names.csv should look like:
 
-|  |          |
-| ----------- | ----------- |
-| halla45      |         |
-| oreilly  |      |
-| rachmanr  |      |
+<table>
+      <tr><td>halla45</td><td> </td></tr>
+      <tr><td>oreilly</td><td> </td></tr>
+      <tr><td>rachmanr</td><td> </td></tr>
+</table>
 
 (No header, one MacID per line)
 
